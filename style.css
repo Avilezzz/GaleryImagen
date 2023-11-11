@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #FFFDF5;
+  font-family: Dancing, Script;
+}
+.container{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.text{
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000000;
+}
+.container__galeria{
+ 
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 1.5rem auto;
+  gap: 0.5rem;
+  
+}
+
+.Imagen1 , .Imagen2 , .Imagen3 , .Imagen4 , .Imagen5 , .Imagen6 , .Imagen7 , .Imagen8 , .Imagen9 , .Imagen10 , .Imagen11 , .Imagen12{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.galeria1{
+  grid-column: span 2;
+  
+}
+.galeria4{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.galeria5{
+  grid-column: span 2;
+}
+.galeria6{
+grid-column: span 2;
+}
+.galeria7{
+  grid-column: span 2;
+}
+.galeria8{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.galeria9{
+  
+}
+.galeria10{
+  
+}
+.galeria11{
+  grid-column: span 2;
+}
+.galeria12{
+  grid-column: span 2;
+}
+@media only screen and (max-width: 767px) {
+  .container__galeria{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .galeria7{
+  grid-column: span 1;
+}
+.galeria8{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+}
